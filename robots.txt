@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /r/
+Disallow: /api/
+
+Sitemap: https://laudodosite.com.br/sitemap.xml

@@ -1,0 +1,31 @@
+# Laudo do Site · gerado por scripts/exportar-site.mjs (não editar à mão)
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Nada que comece com ponto (.git do deploy, .htaccess…), exceto /.well-known
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+  # Sempre https e sem www
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} !^laudodosite\.com\.br$ [NC]
+  RewriteRule ^ https://laudodosite.com.br%{REQUEST_URI} [L,R=301]
+  # /privacidade e /termos servem o .html correspondente
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([a-z0-9-]+)$ $1.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set content-security-policy "default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+  Header always set strict-transport-security "max-age=31536000; includeSubDomains"
+  Header always set x-content-type-options "nosniff"
+  Header always set referrer-policy "strict-origin-when-cross-origin"
+  Header always set permissions-policy "camera=(), microphone=(), geolocation=()"
+  Header always set x-frame-options "DENY"
+  Header always set cross-origin-opener-policy "same-origin"
+  <FilesMatch "\.woff2$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+</IfModule>

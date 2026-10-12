@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Laudo do Site · diagnóstico grátis de segurança, Google e IAs</title>
+  <meta name="description" content="Manuais práticos para você mesmo corrigir a segurança do seu site e a presença dele no Google e nas IAs. Peça grátis pelo WhatsApp a nota do seu site.">
+  <meta name="theme-color" content="#141414">
+  <meta property="og:title" content="Laudo do Site · diagnóstico grátis">
+  <meta property="og:description" content="Descubra se o seu site está protegido e visível para o Google e as IAs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fontes/geist.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/estilo.css">
+  <script type="module" src="/inicio.js"></script>
+  <!-- dominio -->
+  <link rel="canonical" href="https://laudodosite.com.br/">
+  <meta property="og:url" content="https://laudodosite.com.br/">
+  <meta property="og:image" content="https://laudodosite.com.br/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Laudo do Site: seu site está protegido e visível para as IAs?">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- /dominio -->
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="/" aria-label="Laudo do Site, página inicial">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="#E1FF01"/><path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span><b>Laudo</b> do <b>Site</b></span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#manuais">Manuais</a>
+      <a href="#pacotes">Pacotes</a>
+      <a href="#laudo">Nota grátis</a>
+    </nav>
+  </header>
+
+  <main class="pagina">
+    <section class="vitrine" aria-labelledby="tit-vitrine">
+      <div class="vitrine-txt">
+        <h1 class="vitrine-tit" id="tit-vitrine">Seu site <em>seguro</em> e encontrado no Google e nas IAs.</h1>
+        <p class="lead">Dois manuais práticos para você mesmo corrigir: o passo a passo para WordPress, Hostinger, Cloudflare, Vercel e sites feitos com IA, com o código pronto para copiar e como conferir que deu certo.</p>
+        <div class="vitrine-acoes">
+          <a class="btn-pri" href="#manuais">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M8 7h7"/></svg>
+            Ver os manuais
+          </a>
+          <p class="vitrine-preco"><b>143 páginas</b> em dois manuais, a partir de <b>R$ 47</b></p>
+        </div>
+      </div>
+      <div class="capas" aria-hidden="true"><div data-capa="seguro"></div><div data-capa="google"></div></div>
+    </section>
+
+    <section class="cartao convite" id="laudo" aria-labelledby="tit-convite">
+      <div class="convite-txt">
+        <h2 id="tit-convite">Não sabe por onde começar?</h2>
+        <p>Peça a <strong>nota grátis</strong> do seu site. Analisamos mais de 50 pontos e, em até 1 dia útil, você recebe pelo WhatsApp a nota de segurança e de Google e IAs, e quantos problemas encontramos em cada tema. O laudo completo, com o capítulo que corrige cada problema, vem junto com qualquer manual.</p>
+      </div>
+      <form class="form" id="form-laudo" novalidate>
+        <label id="rotulo-url" for="url">Endereço do site</label>
+        <div class="campo">
+          <div class="entrada">
+            <span aria-hidden="true">https://</span>
+            <input id="url" name="url" type="text" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false"
+                   maxlength="2048" placeholder="seusite.com.br" required aria-describedby="erro-url">
+          </div>
+          <button class="btn-whats" id="btn-verificar" type="submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+            <span id="btn-rotulo">Pedir pelo WhatsApp</span>
+          </button>
+        </div>
+        <p class="erro-form" id="erro-url" role="alert" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9.5 17h-19L12 3z"/><path d="M12 10v4M12 17.5v.01"/></svg>
+          <span id="erro-texto"></span>
+        </p>
+        <p class="pedido-ok" id="pedido-ok" role="status" hidden>Pedido aberto no WhatsApp: é só enviar a mensagem. Enquanto o laudo não chega, <a href="#manuais">veja os manuais</a>.</p>
+        <ul class="garantias">
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E1FF01"/><path d="M6 10.5l2.5 2.5L14 7.5" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Só lê o que é público</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E1FF01"/><path d="M6 10.5l2.5 2.5L14 7.5" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Nada é alterado no seu site</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E1FF01"/><path d="M6 10.5l2.5 2.5L14 7.5" fill="none" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Grátis e sem compromisso</li>
+        </ul>
+      </form>
+    </section>
+
+    <section class="secao" id="laudo-e-manual" aria-labelledby="tit-laudo-manual">
+      <div class="secao-intro">
+        <h2 class="secao-titulo" id="tit-laudo-manual">O laudo aponta. O&nbsp;manual resolve.</h2>
+        <p class="lead">O laudo é o diagnóstico do seu site. O manual é o tratamento: cada tipo de problema tem um capítulo inteiro, feito para quem não é técnico.</p>
+      </div>
+      <div class="comparar">
+        <div class="comparar-lado">
+          <h3>No laudo completo</h3>
+          <ul class="lista-check">
+            <li>Nota de 0 a 100 em segurança e em Google e IAs</li>
+            <li>Cada problema com a gravidade e o impacto no seu negócio, sem jargão</li>
+            <li>O capítulo do manual que corrige cada um</li>
+            <li>Em PDF, para guardar ou mandar a quem cuida do site</li>
+          </ul>
+        </div>
+        <div class="comparar-lado profundo">
+          <h3>Em cada capítulo do manual</h3>
+          <ol class="capitulo-ex">
+            <li><strong>O caminho no painel</strong> da sua hospedagem ou plataforma, sem rodeios.</li>
+            <li><strong>O código pronto para copiar</strong>, quando a correção pede código.</li>
+            <li><strong>A ordem segura</strong>, para corrigir sem derrubar o site.</li>
+            <li><strong>Como conferir</strong> que deu certo.</li>
+            <li><strong>O que fazer se algo quebrar.</strong></li>
+            <li><strong>Um checklist</strong> para marcar item por item.</li>
+          </ol>
+        </div>
+      </div>
+      <p class="comparar-fecho">E os manuais vão além do que um laudo consegue ver de fora: a segunda parte de cada um cuida do que fica por trás do site e do que faz o seu negócio ser encontrado e citado.</p>
+    </section>
+
+    <section class="secao" id="manuais" aria-labelledby="tit-manuais">
+      <h2 class="secao-titulo" id="tit-manuais">Dois manuais práticos. Faça você mesmo.</h2>
+      <div class="manuais">
+        <article class="manual">
+          <div data-capa="seguro"></div>
+          <div class="manual-txt">
+            <h3>Seu Site Seguro</h3>
+            <p>Para corrigir as falhas graves antes que virem invasão, vazamento de dados dos seus clientes ou problema com a LGPD.</p>
+            <p class="manual-numeros"><b>84</b> páginas · <b>16</b> capítulos · <b>67</b> itens de checklist</p>
+          </div>
+        </article>
+        <article class="manual">
+          <div data-capa="google"></div>
+          <div class="manual-txt">
+            <h3>Seu Site no Google e nas IAs</h3>
+            <p>Para tirar o seu site da invisibilidade e aumentar as chances de ele ser encontrado no Google e citado pelo ChatGPT, Gemini e outras IAs.</p>
+            <p class="manual-numeros"><b>59</b> páginas · <b>8</b> capítulos · <b>59</b> itens de checklist</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="pacotes" aria-labelledby="tit-pacotes">
+      <h2 class="secao-titulo" id="tit-pacotes">Escolha o seu pacote</h2>
+      <div id="lista-pacotes"></div>
+      <p class="nota-compra">Os manuais são entregues em PDF; o Kit com IA, num arquivo .zip com as skills e o guia de instalação. Pagamento e entrega pela Kiwify. Para receber o laudo completo, envie no WhatsApp o endereço do site e o número do pedido. Você tem 7 dias para desistir da compra, como garante o Código de Defesa do Consumidor.</p>
+    </section>
+
+    <section class="secao" id="como-funciona" aria-labelledby="tit-como">
+      <h2 class="secao-titulo" id="tit-como">Da nota grátis ao laudo completo</h2>
+      <ol class="passos">
+        <li class="cartao">
+          <span class="passo-num" aria-hidden="true">1</span>
+          <h3>Peça a nota grátis</h3>
+          <p>Digite o endereço do site <a href="#laudo">no topo da página</a> e envie a mensagem do WhatsApp, que abre pronta. Sem cadastro.</p>
+        </li>
+        <li class="cartao">
+          <span class="passo-num" aria-hidden="true">2</span>
+          <h3>Receba a nota em até 1 dia útil</h3>
+          <p>A nota geral, a de segurança e a de Google e IAs, quantos problemas há em cada tema e por gravidade, e qual manual cobre o seu caso.</p>
+        </li>
+        <li class="cartao">
+          <span class="passo-num" aria-hidden="true">3</span>
+          <h3>Compre e receba o laudo completo</h3>
+          <p>Envie o endereço do site e o número do pedido no WhatsApp. Em até 1 dia útil chega o PDF com cada problema explicado e o capítulo que o corrige: o seu plano de leitura.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="secao autor" aria-labelledby="tit-autor">
+      <h2 class="secao-titulo" id="tit-autor">Quem está por trás</h2>
+      <div class="cartao autor-cartao">
+        <p class="autor-nome">Rafael Anchieta</p>
+        <p class="autor-papel">Autor dos manuais e responsável pelo Laudo do Site</p>
+        <p>Desenvolvedor de sistemas, atua também em comunicação e marketing digital desde 2014. É dono de um estúdio de podcast e responsável pela produção e direção de inúmeros canais, de nichos variados. Essa experiência o levou a buscar soluções de segurança e de SEO, incluindo a visibilidade nas IAs, que estão reunidas nos manuais e no Kit com IA: acessível a quem busca estabilidade, visibilidade e construção de comunidade, dentro das normas técnicas e legais.</p>
+      </div>
+    </section>
+
+    <section class="secao" aria-labelledby="tit-faq">
+      <h2 class="secao-titulo" id="tit-faq">Perguntas frequentes</h2>
+      <div class="faq">
+        <details class="item"><summary><h3>A nota é grátis mesmo?</h3></summary>
+          <div class="corpo"><p>Sim. Não pedimos cadastro, e-mail nem cartão. Você digita o endereço, envia o pedido pelo WhatsApp e recebe a nota em até 1 dia útil: as notas de cada tema e quantos problemas encontramos, por gravidade. Nesta fase beta, cada análise é feita e conferida por nós antes do envio.</p></div></details>
+        <details class="item"><summary><h3>Qual a diferença entre a nota grátis e o laudo completo?</h3></summary>
+          <div class="corpo"><p>A nota mostra quanto o seu site precisa de atenção. O laudo completo mostra o quê: cada problema explicado em linguagem simples, a evidência encontrada e o capítulo do manual que ensina a corrigir. Ele vem junto com qualquer manual, porque é com o manual em mãos que ele vira um plano de ação.</p></div></details>
+        <details class="item"><summary><h3>Comprei. Como recebo o laudo completo?</h3></summary>
+          <div class="corpo"><p>Envie pelo WhatsApp o endereço do site e o número do pedido que aparece no e-mail da compra. Em até 1 dia útil você recebe o laudo em PDF, feito no dia, com o site como ele está.</p></div></details>
+        <details class="item"><summary><h3>O laudo mexe no meu site?</h3></summary>
+          <div class="corpo"><p>Não. Lemos só o que qualquer visitante ou robô de busca recebe do site. Nada é alterado, e não tentamos entrar em áreas restritas.</p></div></details>
+        <details class="item"><summary><h3>Por que o laudo não diz como corrigir?</h3></summary>
+          <div class="corpo"><p>Porque a correção depende de onde o site está hospedado e de como ele foi feito. O laudo mostra o que está errado e por que importa; os manuais ensinam a corrigir, passo a passo, nos painéis e ferramentas mais usados.</p></div></details>
+        <details class="item"><summary><h3>Preciso da nota para comprar?</h3></summary>
+          <div class="corpo"><p>Não. Se você já sabe o que precisa corrigir, ou quer cuidar do site por completo, pode comprar direto: o laudo completo do seu site vem junto. A nota ajuda a escolher, mas não é obrigatória.</p></div></details>
+        <details class="item"><summary><h3>Qual pacote escolher?</h3></summary>
+          <div class="corpo"><p>Se ainda não sabe, peça a nota grátis: ela mostra se os problemas estão em segurança, no Google e nas IAs, ou nos dois, e indica o pacote para o seu caso. Se o laudo encontrou problemas nos dois temas, os dois manuais saem mais em conta juntos. No Kit com IA, a licença individual vale para uma pessoa; a licença para empresa cobre sócios e funcionários.</p></div></details>
+        <details class="item"><summary><h3>Preciso saber programar para usar os manuais?</h3></summary>
+          <div class="corpo"><p>Para a maior parte das correções, não: muitas são feitas no painel da hospedagem, do domínio ou do próprio site. Alguns itens exigem mexer no código ou pedir a quem mantém o site, e o manual avisa quando.</p></div></details>
+        <details class="item"><summary><h3>O que são as skills do Kit com IA?</h3></summary>
+          <div class="corpo"><p>São instruções e ferramentas prontas para uma IA que trabalha no seu projeto, como o Claude Code ou o Cursor. Com elas, a IA verifica o site, aplica as correções dos manuais e confere o resultado. Servem para sites feitos em código; em WordPress ou construtores de site, os manuais são o caminho.</p></div></details>
+        <details class="item"><summary><h3>Posso usar nos sites dos meus clientes?</h3></summary>
+          <div class="corpo"><p>Pode. O que você aprende nos manuais vale para qualquer site em que trabalhe, e o Kit com IA pode ser usado nos sites de clientes que autorizarem o trabalho por escrito. O que não pode é repassar os arquivos: revender, compartilhar ou publicar os manuais e as skills.</p></div></details>
+        <details class="item"><summary><h3>O laudo substitui uma auditoria?</h3></summary>
+          <div class="corpo"><p>Não. Ele mostra o que dá para ver de fora. Falhas no código, no banco de dados ou nas regras de acesso só aparecem numa análise por dentro.</p></div></details>
+        <details class="item"><summary><h3>E se eu me arrepender da compra?</h3></summary>
+          <div class="corpo"><p>Você tem 7 dias a partir da compra para desistir e receber o valor de volta, como garante o Código de Defesa do Consumidor.</p></div></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Os pedidos chegam pelo WhatsApp. Este site não usa cookies nem rastreadores.</p>
+    <p>Este diagnóstico não é selo nem certificação. <a href="/privacidade">Política de privacidade</a> · <a href="/termos">Termos de uso</a></p>
+  </footer>
+</body>
+</html>
